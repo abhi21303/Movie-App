@@ -1,0 +1,61 @@
+﻿@model Movie
+
+<h1>Delete Movie</h1>
+
+<h2>@TempData["success"]</h2>
+
+<form method="post" >
+    <div class="p-3 mt-4 ">
+        <div class="row mb-3">
+            <label asp-for="MovieTitle"></label>
+            <input asp-for="MovieTitle" class="form-control" readonly/>
+            <span asp-validation-for="MovieTitle" class="text-danger"></span>
+
+        </div>
+        <div class="row mb-3">
+            <label asp-for="MovieCategory"></label>
+            <input asp-for="MovieCategory" class=" form-control" readonly/>
+            <span asp-validation-for="MovieCategory" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="MovieDate"></label>
+            <input asp-for="MovieDate" class=" form-control" readonly/>
+            <span asp-validation-for="MovieDate" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="MovieBigImg"></label>
+            <input asp-for="MovieBigImg" class=" form-control" readonly />
+            <span asp-validation-for="MovieBigImg" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="MovieSmallImg"></label>
+            <input asp-for="MovieSmallImg" class=" form-control" readonly />
+            <span asp-validation-for="MovieSmallImg" class="text-danger"></span>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="MovieUrl"></label>
+            <input asp-for="MovieUrl" class=" form-control" readonly/>
+            <span asp-validation-for="MovieUrl" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-6 col-md-3">
+
+            <input type="submit" value="Delete" class="btn btn-danger form-control" />
+        </div>
+        <div class="col-6 col-md-3">
+            <a asp-controller="Admin" asp-action="Index" class="btn btn-outline-secondary form-control">Back to Movie List</a>
+
+        </div>
+    </div>
+
+
+
+
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

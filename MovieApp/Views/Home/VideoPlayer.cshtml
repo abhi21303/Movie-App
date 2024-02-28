@@ -1,0 +1,108 @@
+﻿@model List<HomeScroll>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+            .video-container video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+            width: 100%;
+        }
+
+        .card {
+            flex: 0 0 18rem;
+            margin-right: 10px;
+            scroll-snap-align: start;
+        }
+
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="video-container">
+                    <video controls controlsList="nodownload" id="videoPlayer">
+                        <source src="~/videos/@ViewBag.MovieUrl" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+       @*  @{
+           
+            foreach (var obj in Model)
+            {
+                <!-- Repeat this card structure for each card -->
+                <div class="card bg-black">
+                    <a href="#">
+                        <img class="card-img-top" src="~/Images/@obj.ImgUrl" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <p class="card-text">Animal</p>
+                    </div>
+                </div>
+                <!-- Repeat ends -->
+            }
+        } *@
+
+
+    </div>
+    <script>
+
+
+        const cardContainer = document.querySelector('.card-container');
+        const cardWidth = document.querySelector('.card').offsetWidth;
+        let scrollInterval;
+
+        function startScrolling() {
+            scrollInterval = setInterval(() => {
+                cardContainer.scrollLeft += cardWidth;
+            }, 1000);
+        }
+
+        function stopScrolling() {
+            clearInterval(scrollInterval);
+        }
+
+        cardContainer.addEventListener('mouseover', stopScrolling);
+        cardContainer.addEventListener('mouseout', startScrolling);
+
+        startScrolling();
+
+    </script>
+</body>
+</html>

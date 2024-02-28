@@ -1,0 +1,58 @@
+﻿@model List<Movie>
+<body style="color: White !important;">
+
+
+<h2>@TempData["success"]</h2>
+<div class="container">
+    <div class="row pt-4 pb-4">
+        <div class=" col-6">
+            <h2 class="">Movie List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Admin" asp-action="Add" class="btn btn-dark">Create</a>
+
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead class="text-light">
+        <tr>
+            <th>Movie Id</th>
+            <th>Movie Name</th>
+            <th>Release date</th>
+            <th></th>
+        </tr>
+    </thead>
+        <tbody>
+        @{
+            foreach(var obj in Model.OrderBy(x=>x.MovieDate))
+            {
+                <tr class="text-light">
+                    <td>@obj.MovieId</td>
+                    <td>@obj.MovieTitle</td>
+                    <td>@obj.MovieDate</td>
+                    <td>
+                        <div class="w-45 btn-group" role="group">
+                            <div>
+
+                                <a asp-controller="Admin" asp-action="Edit" asp-route-id="@obj.MovieId" class="btn btn-dark mx-2">Edit</a>
+                            </div>
+                            <div>
+
+                                    <a asp-controller="Admin" asp-action="Read" asp-route-id="@obj.MovieId" class="btn btn-dark  ">Read</a>
+                            </div>
+                            <div>
+
+                                <a asp-controller="Admin" asp-action="Delete" asp-route-id="@obj.MovieId" class="btn btn-danger mx-2">Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+            
+            
+        
+    </tbody>
+</table>
+</body>

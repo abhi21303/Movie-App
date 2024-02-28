@@ -1,0 +1,120 @@
+﻿@model List<Movie>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Slider</title>
+    <style>
+        .card-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+            width: 100%;
+            transition: transform 0.5s ease; /* Add transition for smooth sliding animation */
+        }
+
+            .card-container:hover {
+                cursor: pointer;
+            }
+
+        .card:hover {
+            opacity: 0.7; /* Reduce opacity of cards on hover */
+        }
+
+        .card {
+            flex: 0 0 18rem;
+            margin-right: 10px;
+            scroll-snap-align: start;
+            transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+        }
+
+        /* Hide scrollbar */
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main-card-container">
+
+        <div class="category">
+            <h5>All Movies</h5>
+        </div>
+        <div class="card-container">
+            @{
+                foreach (var obj in Model)
+                {
+                    <!-- Repeat this card structure for each card -->
+                    <div class="card bg-black">
+                        <a href="#">
+                            <img class="card-img-top" src="~/Images/@obj.MovieSmallImg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Animal</p>
+                        </div>
+                    </div>
+                    <!-- Repeat ends -->
+                }
+            }
+
+        </div>
+    </div>
+    <div class="main-card-container">
+
+        <div class="category">
+            <h5>Action</h5>
+        </div>
+        <div class="card-container">
+            @{
+                var actionMovies = Model.Where(movie => movie.MovieCategory == "Action").ToList();
+                
+                foreach(var obj in actionMovies)
+                {
+                    <!-- Repeat this card structure for each card -->
+                    <div class="card bg-black">
+                        <a href="#">
+                            <img class="card-img-top" src="~/Images/@obj.MovieSmallImg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Animal</p>
+                        </div>
+                    </div>
+                    <!-- Repeat ends -->
+                }
+            }
+            
+        </div>
+    </div>
+    <div class="main-card-container">
+
+        <div class="category">
+            <h5>Drama</h5>
+        </div>
+        <div class="card-container">
+            @{
+                var dramaMovies = Model.Where(movie => movie.MovieCategory == "Drama").ToList();
+
+                foreach (var obj in dramaMovies)
+                {
+                    <!-- Repeat this card structure for each card -->
+                    <div class="card bg-black">
+                        <a href="#">
+                            <img class="card-img-top" src="~/Images/@obj.MovieSmallImg" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">Animal</p>
+                        </div>
+                    </div>
+                    <!-- Repeat ends -->
+                }
+            }
+            
+        </div>
+    </div>
+
+
+</body>
+</html>

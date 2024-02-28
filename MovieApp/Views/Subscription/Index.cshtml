@@ -1,0 +1,95 @@
+﻿@model List<Subscription>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Font Awesome CSS for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .plan {
+            background-color: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+            .plan:hover {
+                transform: scale(1.05); /* Scale up on hover */
+                box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
+            }
+
+        .plan-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .plan-details {
+            margin-bottom: 20px;
+        }
+
+        .plan-price {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn-subscribe {
+            background-color: #ff0000;
+            border-color: #ff0000;
+            border-radius: 25px;
+            font-weight: bold;
+            color: #fff;
+            transition: all 0.5s ease;
+        }
+
+            .btn-subscribe:hover {
+                background-color: #e60000;
+                border-color: #e60000;
+                color: #fff; /* Change text color to white */
+                transform: translateY(-5px); /* Move button up on hover */
+            }
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5">
+        <div class="row">
+
+            @{
+                foreach (var obj in Model)
+                {
+                    <div class="col-3">
+                        <div class="plan">
+                            <div class="plan-title">@obj.Title</div>
+                            <div class="plan-details">
+                                <p>Quality: @obj.Quality</p>
+                                <p>Devices: @obj.Devices</p>
+                                <p>Simultaneous Screens: @obj.SimultaneousScreen</p>
+                                <p>Downloads: @obj.DeviceDownload</p>
+                            </div>
+                            <div class="plan-price">₹@obj.Price /month</div>
+                            <input type="submit" value="Submit" class="btn btn-subscribe btn-block">
+                        </div>
+                    </div>
+                }
+            }
+
+        </div>
+    </div>
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\movieapp\\movieapp\\views\\home\\videoplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|solutionrelative:movieapp\\views\\home\\videoplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\movieapp\\movieapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|solutionrelative:movieapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\movieapp\\movieapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|solutionrelative:movieapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\movieapp\\movieapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|solutionrelative:movieapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|c:\\users\\admin\\onedrive\\desktop\\asp.net core\\movieapp\\movieapp\\models\\homescroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB7BD81C-4614-4BF1-BEA7-67D8D2A04B83}|MovieApp\\MovieApp.csproj|solutionrelative:movieapp\\models\\homescroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VideoPlayer.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Home\\VideoPlayer.cshtml",
+              "RelativeDocumentMoniker": "MovieApp\\Views\\Home\\VideoPlayer.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Home\\VideoPlayer.cshtml",
+              "RelativeToolTip": "MovieApp\\Views\\Home\\VideoPlayer.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-28T11:13:58.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MovieApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MovieApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-28T10:54:51.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovieApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MovieApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAAMEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-28T10:07:54.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeScroll.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Models\\HomeScroll.cs",
+              "RelativeDocumentMoniker": "MovieApp\\Models\\HomeScroll.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Models\\HomeScroll.cs",
+              "RelativeToolTip": "MovieApp\\Models\\HomeScroll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T06:39:19.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MovieApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\asp.net core\\MovieApp\\MovieApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MovieApp\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvwoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T06:32:59.733Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
